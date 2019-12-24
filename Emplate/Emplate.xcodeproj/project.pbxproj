@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743CC9FB551BF5E72A133FA5 /* Pods_Emplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */; };
 		DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EED23B23CD00078222E /* AppDelegate.swift */; };
 		DEA02EF023B23CD00078222E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EEF23B23CD00078222E /* SceneDelegate.swift */; };
 		DEA02EF223B23CD00078222E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EF123B23CD00078222E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.release.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.release.xcconfig"; sourceTree = "<group>"; };
+		909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.debug.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA02EEA23B23CD00078222E /* Emplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA02EED23B23CD00078222E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA02EEF23B23CD00078222E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743CC9FB551BF5E72A133FA5 /* Pods_Emplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98B72BAEF6C267C33D818527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */,
+				731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3A103DE0F4ABE67392B1E56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEA02EE123B23CD00078222E = {
 			isa = PBXGroup;
 			children = (
 				DEA02EEC23B23CD00078222E /* Emplate */,
 				DEA02EEB23B23CD00078222E /* Products */,
+				98B72BAEF6C267C33D818527 /* Pods */,
+				B3A103DE0F4ABE67392B1E56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEA02EFE23B23CD00078222E /* Build configuration list for PBXNativeTarget "Emplate" */;
 			buildPhases = (
+				DD1270EDEA919432BB17E040 /* [CP] Check Pods Manifest.lock */,
 				DEA02EE623B23CD00078222E /* Sources */,
 				DEA02EE723B23CD00078222E /* Frameworks */,
 				DEA02EE823B23CD00078222E /* Resources */,
+				344D6ACC1F8879991B2481CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		344D6ACC1F8879991B2481CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emplate/Pods-Emplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emplate/Pods-Emplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emplate/Pods-Emplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1270EDEA919432BB17E040 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEA02EE623B23CD00078222E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		DEA02EFF23B23CD00078222E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		DEA02F0023B23CD00078222E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

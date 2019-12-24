@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		DEA02EF523B23CD00078222E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF323B23CD00078222E /* Main.storyboard */; };
 		DEA02EF723B23CD00078222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF623B23CD00078222E /* Assets.xcassets */; };
 		DEA02EFA23B23CD00078222E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF823B23CD00078222E /* LaunchScreen.storyboard */; };
+		DEA02F0423B240700078222E /* EmplateApiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0323B240700078222E /* EmplateApiInfo.swift */; };
+		DEA02F0723B242490078222E /* Dictionary+merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0623B242490078222E /* Dictionary+merge.swift */; };
+		DEA02F0923B2444F0078222E /* EmplateApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0823B2444F0078222E /* EmplateApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		DEA02EF623B23CD00078222E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA02EF923B23CD00078222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA02EFB23B23CD00078222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA02F0323B240700078222E /* EmplateApiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateApiInfo.swift; sourceTree = "<group>"; };
+		DEA02F0623B242490078222E /* Dictionary+merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+merge.swift"; sourceTree = "<group>"; };
+		DEA02F0823B2444F0078222E /* EmplateApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */,
 				731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +86,8 @@
 		DEA02EEC23B23CD00078222E /* Emplate */ = {
 			isa = PBXGroup;
 			children = (
+				DEA02F0523B242390078222E /* Extensions */,
+				DEA02F0123B23FD10078222E /* Services */,
 				DEA02EED23B23CD00078222E /* AppDelegate.swift */,
 				DEA02EEF23B23CD00078222E /* SceneDelegate.swift */,
 				DEA02EF123B23CD00078222E /* ViewController.swift */,
@@ -90,6 +97,31 @@
 				DEA02EFB23B23CD00078222E /* Info.plist */,
 			);
 			path = Emplate;
+			sourceTree = "<group>";
+		};
+		DEA02F0123B23FD10078222E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F0223B23FDB0078222E /* EmplateWebApi */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEA02F0223B23FDB0078222E /* EmplateWebApi */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F0323B240700078222E /* EmplateApiInfo.swift */,
+				DEA02F0823B2444F0078222E /* EmplateApiClient.swift */,
+			);
+			path = EmplateWebApi;
+			sourceTree = "<group>";
+		};
+		DEA02F0523B242390078222E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F0623B242490078222E /* Dictionary+merge.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA02F0923B2444F0078222E /* EmplateApiClient.swift in Sources */,
+				DEA02F0723B242490078222E /* Dictionary+merge.swift in Sources */,
 				DEA02EF223B23CD00078222E /* ViewController.swift in Sources */,
+				DEA02F0423B240700078222E /* EmplateApiInfo.swift in Sources */,
 				DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */,
 				DEA02EF023B23CD00078222E /* SceneDelegate.swift in Sources */,
 			);

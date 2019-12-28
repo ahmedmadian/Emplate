@@ -14,10 +14,10 @@ protocol PostRepository {
 
 class PostDataRepository: PostRepository{
     //MARK:- Properties
-    private let remoteDataSource: RemoteDataSource
+    private let remoteDataSource: EmplateRemoteDataSourceProtocol
     
     // MARK:- Initializers
-    init(remoteDataSource: RemoteDataSource) {
+    init(remoteDataSource: EmplateRemoteDataSourceProtocol) {
         self.remoteDataSource = remoteDataSource
     }
     

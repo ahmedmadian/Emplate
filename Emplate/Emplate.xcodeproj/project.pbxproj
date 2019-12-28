@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		743CC9FB551BF5E72A133FA5 /* Pods_Emplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */; };
-		DE7B8B2923B7D2D00051A1EE /* PostCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */; };
 		DE7B8B2C23B7D3770051A1EE /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2B23B7D3770051A1EE /* CurrencyConverterTests.swift */; };
 		DE7B8B2E23B7DF150051A1EE /* DateConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2D23B7DF150051A1EE /* DateConverterTests.swift */; };
 		DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EED23B23CD00078222E /* AppDelegate.swift */; };
@@ -38,10 +37,10 @@
 		DEA02F6723B414D90078222E /* PostTest+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6623B414D90078222E /* PostTest+Json.swift */; };
 		DEA02F6A23B41CAA0078222E /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */; };
 		DEA02F6D23B41DD80078222E /* PostUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6C23B41DD80078222E /* PostUseCaseMock.swift */; };
-		DEA02F7123B4B7F30078222E /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7023B4B7F30078222E /* BaseApiService.swift */; };
+		DEA02F7123B4B7F30078222E /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7023B4B7F30078222E /* RemoteDataSource.swift */; };
 		DEA02F7323B4B8730078222E /* EndPointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7223B4B8730078222E /* EndPointFactory.swift */; };
-		DEA02F7823B4B8DE0078222E /* BaseApiServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */; };
-		DEA02F7A23B4B9850078222E /* EmplateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7923B4B9850078222E /* EmplateAPIService.swift */; };
+		DEA02F7823B4B8DE0078222E /* RemoteDataSourceServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7723B4B8DE0078222E /* RemoteDataSourceServiceError.swift */; };
+		DEA02F7A23B4B9850078222E /* EmplateRemoteDateSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7923B4B9850078222E /* EmplateRemoteDateSource.swift */; };
 		DEA02F7C23B4BA070078222E /* Error+Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7B23B4BA070078222E /* Error+Code.swift */; };
 		DEA02F7E23B4EBA50078222E /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7D23B4EBA50078222E /* CurrencyConverter.swift */; };
 		DEA02F8123B5B1C30078222E /* HTTPMethod+HTTPSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F8023B5B1C30078222E /* HTTPMethod+HTTPSchema.swift */; };
@@ -63,7 +62,6 @@
 		731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.release.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.release.xcconfig"; sourceTree = "<group>"; };
 		909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.debug.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.debug.xcconfig"; sourceTree = "<group>"; };
-		DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModelTests.swift; sourceTree = "<group>"; };
 		DE7B8B2B23B7D3770051A1EE /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		DE7B8B2D23B7DF150051A1EE /* DateConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverterTests.swift; sourceTree = "<group>"; };
 		DEA02EEA23B23CD00078222E /* Emplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,10 +95,10 @@
 		DEA02F6623B414D90078222E /* PostTest+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostTest+Json.swift"; sourceTree = "<group>"; };
 		DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		DEA02F6C23B41DD80078222E /* PostUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCaseMock.swift; sourceTree = "<group>"; };
-		DEA02F7023B4B7F30078222E /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		DEA02F7023B4B7F30078222E /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		DEA02F7223B4B8730078222E /* EndPointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFactory.swift; sourceTree = "<group>"; };
-		DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiServiceError.swift; sourceTree = "<group>"; };
-		DEA02F7923B4B9850078222E /* EmplateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateAPIService.swift; sourceTree = "<group>"; };
+		DEA02F7723B4B8DE0078222E /* RemoteDataSourceServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceServiceError.swift; sourceTree = "<group>"; };
+		DEA02F7923B4B9850078222E /* EmplateRemoteDateSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateRemoteDateSource.swift; sourceTree = "<group>"; };
 		DEA02F7B23B4BA070078222E /* Error+Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Code.swift"; sourceTree = "<group>"; };
 		DEA02F7D23B4EBA50078222E /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		DEA02F8023B5B1C30078222E /* HTTPMethod+HTTPSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod+HTTPSchema.swift"; sourceTree = "<group>"; };
@@ -194,13 +192,13 @@
 			path = DataStores;
 			sourceTree = "<group>";
 		};
-		DEA02F0223B23FDB0078222E /* EmplateWebApi */ = {
+		DEA02F0223B23FDB0078222E /* EmplateRemoteDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				DEA02F7923B4B9850078222E /* EmplateAPIService.swift */,
+				DEA02F7923B4B9850078222E /* EmplateRemoteDateSource.swift */,
 				DEA02F0323B240700078222E /* EmplateAPIConstatnt.swift */,
 			);
-			path = EmplateWebApi;
+			path = EmplateRemoteDataSource;
 			sourceTree = "<group>";
 		};
 		DEA02F0523B242390078222E /* Extensions */ = {
@@ -338,8 +336,8 @@
 			children = (
 				DEA02F7223B4B8730078222E /* EndPointFactory.swift */,
 				DEA02F7F23B5B1950078222E /* APIUtility */,
-				DEA02F6F23B4B7AF0078222E /* BaseAPIService */,
-				DEA02F0223B23FDB0078222E /* EmplateWebApi */,
+				DEA02F6F23B4B7AF0078222E /* RemoteDataSource */,
+				DEA02F0223B23FDB0078222E /* EmplateRemoteDataSource */,
 			);
 			path = RemoteDataStore;
 			sourceTree = "<group>";
@@ -405,7 +403,6 @@
 			isa = PBXGroup;
 			children = (
 				DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */,
-				DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -418,13 +415,13 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		DEA02F6F23B4B7AF0078222E /* BaseAPIService */ = {
+		DEA02F6F23B4B7AF0078222E /* RemoteDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				DEA02F7023B4B7F30078222E /* BaseApiService.swift */,
-				DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */,
+				DEA02F7023B4B7F30078222E /* RemoteDataSource.swift */,
+				DEA02F7723B4B8DE0078222E /* RemoteDataSourceServiceError.swift */,
 			);
-			path = BaseAPIService;
+			path = RemoteDataSource;
 			sourceTree = "<group>";
 		};
 		DEA02F7F23B5B1950078222E /* APIUtility */ = {
@@ -584,12 +581,12 @@
 				DEA02F2823B36F590078222E /* PostListViewController.swift in Sources */,
 				DEA02F7E23B4EBA50078222E /* CurrencyConverter.swift in Sources */,
 				DEA02F3E23B3965A0078222E /* UIView+typeName.swift in Sources */,
-				DEA02F7823B4B8DE0078222E /* BaseApiServiceError.swift in Sources */,
+				DEA02F7823B4B8DE0078222E /* RemoteDataSourceServiceError.swift in Sources */,
 				DEA02F5323B3D19B0078222E /* DateConverter.swift in Sources */,
 				DEA02F4D23B3AC460078222E /* Coordinator.swift in Sources */,
 				DEA02F4F23B3AC710078222E /* PostsCoordinator.swift in Sources */,
 				DEA02F3C23B395BE0078222E /* PostsViewModel.swift in Sources */,
-				DEA02F7A23B4B9850078222E /* EmplateAPIService.swift in Sources */,
+				DEA02F7A23B4B9850078222E /* EmplateRemoteDateSource.swift in Sources */,
 				DEA02F8323B646D40078222E /* UIViewController+ActivityIndicator.swift in Sources */,
 				DEA02F1F23B36EFA0078222E /* PostCell.swift in Sources */,
 				DEA02F0723B242490078222E /* Dictionary+merge.swift in Sources */,
@@ -606,7 +603,7 @@
 				DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */,
 				DEA02F1223B24D300078222E /* Thumbnail.swift in Sources */,
 				DEA02F0C23B24A340078222E /* Post.swift in Sources */,
-				DEA02F7123B4B7F30078222E /* BaseApiService.swift in Sources */,
+				DEA02F7123B4B7F30078222E /* RemoteDataSource.swift in Sources */,
 				DEA02F8123B5B1C30078222E /* HTTPMethod+HTTPSchema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,7 +617,6 @@
 				DEA02F6723B414D90078222E /* PostTest+Json.swift in Sources */,
 				DEA02F5B23B413C00078222E /* EmplateTests.swift in Sources */,
 				DE7B8B2E23B7DF150051A1EE /* DateConverterTests.swift in Sources */,
-				DE7B8B2923B7D2D00051A1EE /* PostCellViewModelTests.swift in Sources */,
 				DEA02F6523B414670078222E /* PostTest.swift in Sources */,
 				DE7B8B2C23B7D3770051A1EE /* CurrencyConverterTests.swift in Sources */,
 			);

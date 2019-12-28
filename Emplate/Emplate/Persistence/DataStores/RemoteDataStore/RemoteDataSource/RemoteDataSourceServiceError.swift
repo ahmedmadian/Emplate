@@ -1,5 +1,5 @@
 //
-//  BaseApiServiceError.swift
+//  RemoteDataSourceServiceError.swift
 //  Emplate
 //
 //  Created by Ahmed Madian on 12/26/19.
@@ -7,7 +7,7 @@
 //
 import Foundation
 
-enum BaseAPIServiceError: LocalizedError {
+enum RemoteDataSourceServiceError: LocalizedError {
     case parsingError
     case serverError(message: String, code: Int)
     

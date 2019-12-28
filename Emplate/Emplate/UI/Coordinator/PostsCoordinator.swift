@@ -18,7 +18,7 @@ class PostsCoordinator: Coordinator{
     func start() {
         guard let navigationController = navigationController else { return }
         
-        let emplateService = EmplateAPIService.shared
+        let emplateService = EmplateRemoteDateSource.shared
         let dataRepo = PostDataRepository(remoteDataSource: emplateService)
         let usecase = PostsUseCase(postsRepository: dataRepo)
         let viewModel = PostsViewModel(usecase: usecase)

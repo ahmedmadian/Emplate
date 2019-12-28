@@ -15,8 +15,6 @@ class PostUseCaseMock: PostUseCase {
 
     }
     
-    
-    
     struct MockResponses {
         var fetchPosts = [Post]()
     }

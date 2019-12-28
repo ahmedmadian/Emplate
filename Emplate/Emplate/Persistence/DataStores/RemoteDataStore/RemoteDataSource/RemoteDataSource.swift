@@ -1,5 +1,5 @@
 //
-//  BaseApiService.swift
+//  RemoteDataSource.swift
 //  Emplate
 //
 //  Created by Ahmed Madian on 12/26/19.
@@ -8,7 +8,11 @@
 
 import Alamofire
 
-class BaseAPIService {
+protocol RemoteDataSource {
+    func execute<Model:Codable>(endPoint: Endpoint, completionHandler: @escaping (Swift.Result<Model, Error>) -> Void )
+}
+
+extension RemoteDataSource {
     func execute<Model:Codable>(endPoint: Endpoint, completionHandler: @escaping (Swift.Result<Model, Error>) -> Void ) {
         
         var generalParameters = [String:Any]()
@@ -25,10 +29,10 @@ class BaseAPIService {
                     completionHandler(Swift.Result.success(object))
                 }
                 catch {
-                    completionHandler(Swift.Result.failure(BaseAPIServiceError.parsingError))
+                    completionHandler(Swift.Result.failure(RemoteDataSourceServiceError.parsingError))
                 }
             case .failure(let error):
-                completionHandler(Swift.Result.failure(BaseAPIServiceError.serverError(message: error.localizedDescription, code: error.code)))
+                completionHandler(Swift.Result.failure(RemoteDataSourceServiceError.serverError(message: error.localizedDescription, code: error.code)))
             }
         }
     }

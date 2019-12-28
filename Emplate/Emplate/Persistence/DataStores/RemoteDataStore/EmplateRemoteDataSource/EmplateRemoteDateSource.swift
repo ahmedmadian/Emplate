@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol RemoteDataSource {
+protocol EmplateRemoteDataSourceProtocol: RemoteDataSource {
     func fetchPosts(with endPoint: Endpoint, completion: @escaping (([Post]?), Error?) -> ())
 }
 
-final class EmplateAPIService: BaseAPIService, RemoteDataSource {
+final class EmplateRemoteDateSource: EmplateRemoteDataSourceProtocol {
     //MARK:- Properties
-    static let shared = EmplateAPIService()
+    static let shared = EmplateRemoteDateSource()
     
     // MARK:- Initializers
-    private override init() {}
+    private init() {}
     
     //MAERK:- Remote Data Source
     func fetchPosts(with endPoint: Endpoint, completion: @escaping (([Post]?), Error?) -> ()) {

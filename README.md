@@ -12,10 +12,11 @@ Clean Architecture with MVVM + Coordinator.
 
 ### Dependency Graph
 
-The App originally consists of 3 tiers: <br />
+The App originally consists of 4 tiers: <br />
 
 **UI -** Responsible for representing data on screen and handle presentation logic, MVVM design pattern used in this layer. <br />**Domain -** Responsible for handling App business logic. <br />
 **Persistent -** Responsible for data saving and retrieving from/to data stores. <br />
+**Coordinator -** Its responsibility is to show a new view and to inject the dependencies which the View and ViewModel need. <br/>
 
 Every inner layer doesn't know anything about the outer layer. <br />
 

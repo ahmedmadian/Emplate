@@ -13,14 +13,15 @@ Clean Architecture with MVVM + Coordinator
 ### Dependency Graph
 
 The App originally consists of 3 tiers: <br />
-  **UI** UI Layer
-  **Domain**
+
+**UI -** UI Layer <br />
+**Domain -**
 
 
 ### Third Party Libraries
 
-**Alamofire** for network requests. <br />
-**kingFisher** for downloading images.
+**Alamofire -** for network requests. <br />
+**kingFisher -** for downloading images.
 
 ### Remote Data Source
 

@@ -14,8 +14,9 @@ Clean Architecture with MVVM + Coordinator
 
 The App originally consists of 3 tiers: <br />
 
-**UI -** UI Layer <br />
-**Domain -**
+**UI -** Responsible for represnting data on screen and handle presentation logic, MVVM design pattern used in this layer <br />
+**Domain -** Responible for handling App business logic <br />
+**Persistent -** Responible for data saving and retriving from/to data stores <br />
 
 
 ### Third Party Libraries

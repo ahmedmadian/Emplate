@@ -6,8 +6,7 @@
 //  Copyright © 2019 Ahmed Madian. All rights reserved.
 //
 
-extension Dictionary {
-    
+extension Dictionary {    
     mutating func merge(with dictionary: Dictionary) {
         dictionary.forEach { updateValue($1, forKey: $0) }
     }
@@ -17,4 +16,5 @@ extension Dictionary {
         dict.merge(with: dictionary)
         return dict
     }
+    
 }

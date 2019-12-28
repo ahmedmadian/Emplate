@@ -8,32 +8,104 @@
 
 /* Begin PBXBuildFile section */
 		743CC9FB551BF5E72A133FA5 /* Pods_Emplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */; };
+		DE7B8B2923B7D2D00051A1EE /* PostCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */; };
+		DE7B8B2C23B7D3770051A1EE /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2B23B7D3770051A1EE /* CurrencyConverterTests.swift */; };
+		DE7B8B2E23B7DF150051A1EE /* DateConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B8B2D23B7DF150051A1EE /* DateConverterTests.swift */; };
 		DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EED23B23CD00078222E /* AppDelegate.swift */; };
-		DEA02EF023B23CD00078222E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EEF23B23CD00078222E /* SceneDelegate.swift */; };
-		DEA02EF223B23CD00078222E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02EF123B23CD00078222E /* ViewController.swift */; };
-		DEA02EF523B23CD00078222E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF323B23CD00078222E /* Main.storyboard */; };
 		DEA02EF723B23CD00078222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF623B23CD00078222E /* Assets.xcassets */; };
 		DEA02EFA23B23CD00078222E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA02EF823B23CD00078222E /* LaunchScreen.storyboard */; };
-		DEA02F0423B240700078222E /* EmplateApiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0323B240700078222E /* EmplateApiInfo.swift */; };
+		DEA02F0423B240700078222E /* EmplateAPIConstatnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0323B240700078222E /* EmplateAPIConstatnt.swift */; };
 		DEA02F0723B242490078222E /* Dictionary+merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0623B242490078222E /* Dictionary+merge.swift */; };
-		DEA02F0923B2444F0078222E /* EmplateApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0823B2444F0078222E /* EmplateApiClient.swift */; };
+		DEA02F0C23B24A340078222E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0B23B24A340078222E /* Post.swift */; };
+		DEA02F0E23B24C060078222E /* PostField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0D23B24C060078222E /* PostField.swift */; };
+		DEA02F1023B24CD40078222E /* PostPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F0F23B24CD40078222E /* PostPeriod.swift */; };
+		DEA02F1223B24D300078222E /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F1123B24D300078222E /* Thumbnail.swift */; };
+		DEA02F1823B24DC10078222E /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F1723B24DC10078222E /* Urls.swift */; };
+		DEA02F1F23B36EFA0078222E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F1D23B36EFA0078222E /* PostCell.swift */; };
+		DEA02F2023B36EFA0078222E /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA02F1E23B36EFA0078222E /* PostCell.xib */; };
+		DEA02F2823B36F590078222E /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F2623B36F590078222E /* PostListViewController.swift */; };
+		DEA02F2923B36F590078222E /* PostListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA02F2723B36F590078222E /* PostListViewController.xib */; };
+		DEA02F3923B392EF0078222E /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F3823B392EF0078222E /* PostCellViewModel.swift */; };
+		DEA02F3C23B395BE0078222E /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F3B23B395BE0078222E /* PostsViewModel.swift */; };
+		DEA02F3E23B3965A0078222E /* UIView+typeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F3D23B3965A0078222E /* UIView+typeName.swift */; };
+		DEA02F4223B39E5C0078222E /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F4123B39E5C0078222E /* PostsUseCase.swift */; };
+		DEA02F4723B3A12F0078222E /* PostDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F4623B3A12F0078222E /* PostDataRepository.swift */; };
+		DEA02F4D23B3AC460078222E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F4C23B3AC460078222E /* Coordinator.swift */; };
+		DEA02F4F23B3AC710078222E /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F4E23B3AC710078222E /* PostsCoordinator.swift */; };
+		DEA02F5323B3D19B0078222E /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F5223B3D19B0078222E /* DateConverter.swift */; };
+		DEA02F5B23B413C00078222E /* EmplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F5A23B413C00078222E /* EmplateTests.swift */; };
+		DEA02F6523B414670078222E /* PostTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6423B414670078222E /* PostTest.swift */; };
+		DEA02F6723B414D90078222E /* PostTest+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6623B414D90078222E /* PostTest+Json.swift */; };
+		DEA02F6A23B41CAA0078222E /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */; };
+		DEA02F6D23B41DD80078222E /* PostUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F6C23B41DD80078222E /* PostUseCaseMock.swift */; };
+		DEA02F7123B4B7F30078222E /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7023B4B7F30078222E /* BaseApiService.swift */; };
+		DEA02F7323B4B8730078222E /* EndPointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7223B4B8730078222E /* EndPointFactory.swift */; };
+		DEA02F7823B4B8DE0078222E /* BaseApiServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */; };
+		DEA02F7A23B4B9850078222E /* EmplateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7923B4B9850078222E /* EmplateAPIService.swift */; };
+		DEA02F7C23B4BA070078222E /* Error+Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7B23B4BA070078222E /* Error+Code.swift */; };
+		DEA02F7E23B4EBA50078222E /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F7D23B4EBA50078222E /* CurrencyConverter.swift */; };
+		DEA02F8123B5B1C30078222E /* HTTPMethod+HTTPSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F8023B5B1C30078222E /* HTTPMethod+HTTPSchema.swift */; };
+		DEA02F8323B646D40078222E /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F8223B646D40078222E /* UIViewController+ActivityIndicator.swift */; };
+		DEA02F8523B652560078222E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA02F8423B652560078222E /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEA02F5D23B413C00078222E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA02EE223B23CD00078222E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA02EE923B23CD00078222E;
+			remoteInfo = Emplate;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		731683E8DE09D02C244FF994 /* Pods-Emplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.release.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.release.xcconfig"; sourceTree = "<group>"; };
 		909CF03C5F5DA4138B110541 /* Pods_Emplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD61101D2C3F4FAEAEF9E5F5 /* Pods-Emplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emplate.debug.xcconfig"; path = "Target Support Files/Pods-Emplate/Pods-Emplate.debug.xcconfig"; sourceTree = "<group>"; };
+		DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModelTests.swift; sourceTree = "<group>"; };
+		DE7B8B2B23B7D3770051A1EE /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
+		DE7B8B2D23B7DF150051A1EE /* DateConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverterTests.swift; sourceTree = "<group>"; };
 		DEA02EEA23B23CD00078222E /* Emplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA02EED23B23CD00078222E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEA02EEF23B23CD00078222E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEA02EF123B23CD00078222E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEA02EF423B23CD00078222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEA02EF623B23CD00078222E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA02EF923B23CD00078222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA02EFB23B23CD00078222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA02F0323B240700078222E /* EmplateApiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateApiInfo.swift; sourceTree = "<group>"; };
+		DEA02F0323B240700078222E /* EmplateAPIConstatnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateAPIConstatnt.swift; sourceTree = "<group>"; };
 		DEA02F0623B242490078222E /* Dictionary+merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+merge.swift"; sourceTree = "<group>"; };
-		DEA02F0823B2444F0078222E /* EmplateApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateApiClient.swift; sourceTree = "<group>"; };
+		DEA02F0B23B24A340078222E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DEA02F0D23B24C060078222E /* PostField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostField.swift; sourceTree = "<group>"; };
+		DEA02F0F23B24CD40078222E /* PostPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPeriod.swift; sourceTree = "<group>"; };
+		DEA02F1123B24D300078222E /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		DEA02F1723B24DC10078222E /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		DEA02F1D23B36EFA0078222E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		DEA02F1E23B36EFA0078222E /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		DEA02F2623B36F590078222E /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		DEA02F2723B36F590078222E /* PostListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListViewController.xib; sourceTree = "<group>"; };
+		DEA02F3823B392EF0078222E /* PostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
+		DEA02F3B23B395BE0078222E /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		DEA02F3D23B3965A0078222E /* UIView+typeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+typeName.swift"; sourceTree = "<group>"; };
+		DEA02F4123B39E5C0078222E /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		DEA02F4623B3A12F0078222E /* PostDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataRepository.swift; sourceTree = "<group>"; };
+		DEA02F4C23B3AC460078222E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DEA02F4E23B3AC710078222E /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
+		DEA02F5223B3D19B0078222E /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		DEA02F5823B413C00078222E /* EmplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA02F5A23B413C00078222E /* EmplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateTests.swift; sourceTree = "<group>"; };
+		DEA02F5C23B413C00078222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA02F6423B414670078222E /* PostTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTest.swift; sourceTree = "<group>"; };
+		DEA02F6623B414D90078222E /* PostTest+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostTest+Json.swift"; sourceTree = "<group>"; };
+		DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		DEA02F6C23B41DD80078222E /* PostUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCaseMock.swift; sourceTree = "<group>"; };
+		DEA02F7023B4B7F30078222E /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		DEA02F7223B4B8730078222E /* EndPointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFactory.swift; sourceTree = "<group>"; };
+		DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiServiceError.swift; sourceTree = "<group>"; };
+		DEA02F7923B4B9850078222E /* EmplateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplateAPIService.swift; sourceTree = "<group>"; };
+		DEA02F7B23B4BA070078222E /* Error+Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Code.swift"; sourceTree = "<group>"; };
+		DEA02F7D23B4EBA50078222E /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		DEA02F8023B5B1C30078222E /* HTTPMethod+HTTPSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod+HTTPSchema.swift"; sourceTree = "<group>"; };
+		DEA02F8223B646D40078222E /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		DEA02F8423B652560078222E /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +114,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				743CC9FB551BF5E72A133FA5 /* Pods_Emplate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA02F5523B413C00078222E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +144,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE7B8B2A23B7D35B0051A1EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DE7B8B2B23B7D3770051A1EE /* CurrencyConverterTests.swift */,
+				DE7B8B2D23B7DF150051A1EE /* DateConverterTests.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		DEA02EE123B23CD00078222E = {
 			isa = PBXGroup;
 			children = (
 				DEA02EEC23B23CD00078222E /* Emplate */,
+				DEA02F5923B413C00078222E /* EmplateTests */,
 				DEA02EEB23B23CD00078222E /* Products */,
 				98B72BAEF6C267C33D818527 /* Pods */,
 				B3A103DE0F4ABE67392B1E56 /* Frameworks */,
@@ -79,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA02EEA23B23CD00078222E /* Emplate.app */,
+				DEA02F5823B413C00078222E /* EmplateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,32 +176,29 @@
 		DEA02EEC23B23CD00078222E /* Emplate */ = {
 			isa = PBXGroup;
 			children = (
+				DEA02F5123B3D1880078222E /* Utilities */,
 				DEA02F0523B242390078222E /* Extensions */,
-				DEA02F0123B23FD10078222E /* Services */,
-				DEA02EED23B23CD00078222E /* AppDelegate.swift */,
-				DEA02EEF23B23CD00078222E /* SceneDelegate.swift */,
-				DEA02EF123B23CD00078222E /* ViewController.swift */,
-				DEA02EF323B23CD00078222E /* Main.storyboard */,
-				DEA02EF623B23CD00078222E /* Assets.xcassets */,
-				DEA02EF823B23CD00078222E /* LaunchScreen.storyboard */,
-				DEA02EFB23B23CD00078222E /* Info.plist */,
+				DEA02F3123B38CCD0078222E /* UI */,
+				DEA02F3323B38D4A0078222E /* Domain */,
+				DEA02F3223B38D170078222E /* Persistence */,
+				DEA02F3523B38DA80078222E /* Core */,
 			);
 			path = Emplate;
 			sourceTree = "<group>";
 		};
-		DEA02F0123B23FD10078222E /* Services */ = {
+		DEA02F0123B23FD10078222E /* DataStores */ = {
 			isa = PBXGroup;
 			children = (
-				DEA02F0223B23FDB0078222E /* EmplateWebApi */,
+				DEA02F4823B3A43D0078222E /* RemoteDataStore */,
 			);
-			path = Services;
+			path = DataStores;
 			sourceTree = "<group>";
 		};
 		DEA02F0223B23FDB0078222E /* EmplateWebApi */ = {
 			isa = PBXGroup;
 			children = (
-				DEA02F0323B240700078222E /* EmplateApiInfo.swift */,
-				DEA02F0823B2444F0078222E /* EmplateApiClient.swift */,
+				DEA02F7923B4B9850078222E /* EmplateAPIService.swift */,
+				DEA02F0323B240700078222E /* EmplateAPIConstatnt.swift */,
 			);
 			path = EmplateWebApi;
 			sourceTree = "<group>";
@@ -120,8 +207,232 @@
 			isa = PBXGroup;
 			children = (
 				DEA02F0623B242490078222E /* Dictionary+merge.swift */,
+				DEA02F3D23B3965A0078222E /* UIView+typeName.swift */,
+				DEA02F7B23B4BA070078222E /* Error+Code.swift */,
+				DEA02F8223B646D40078222E /* UIViewController+ActivityIndicator.swift */,
+				DEA02F8423B652560078222E /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEA02F0A23B24A250078222E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F0B23B24A340078222E /* Post.swift */,
+				DEA02F0D23B24C060078222E /* PostField.swift */,
+				DEA02F0F23B24CD40078222E /* PostPeriod.swift */,
+				DEA02F1123B24D300078222E /* Thumbnail.swift */,
+				DEA02F1723B24DC10078222E /* Urls.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEA02F1B23B36E970078222E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F3023B3849B0078222E /* PostCell */,
+				DEA02F2123B36F060078222E /* Posts */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DEA02F2123B36F060078222E /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F5023B3D0680078222E /* View */,
+				DEA02F3A23B3959A0078222E /* ViewModel */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		DEA02F3023B3849B0078222E /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F3723B392D90078222E /* View */,
+				DEA02F3623B392C10078222E /* ViewModel */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		DEA02F3123B38CCD0078222E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F4B23B3AC2C0078222E /* Coordinator */,
+				DEA02F1B23B36E970078222E /* Module */,
+				DEA02F3423B38D740078222E /* Resources */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DEA02F3223B38D170078222E /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F4523B3A0EC0078222E /* Repository */,
+				DEA02F0A23B24A250078222E /* Model */,
+				DEA02F0123B23FD10078222E /* DataStores */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		DEA02F3323B38D4A0078222E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F4123B39E5C0078222E /* PostsUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DEA02F3423B38D740078222E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02EF623B23CD00078222E /* Assets.xcassets */,
+				DEA02EF823B23CD00078222E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEA02F3523B38DA80078222E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02EFB23B23CD00078222E /* Info.plist */,
+				DEA02EED23B23CD00078222E /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DEA02F3623B392C10078222E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F3823B392EF0078222E /* PostCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEA02F3723B392D90078222E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F1D23B36EFA0078222E /* PostCell.swift */,
+				DEA02F1E23B36EFA0078222E /* PostCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEA02F3A23B3959A0078222E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F3B23B395BE0078222E /* PostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEA02F4523B3A0EC0078222E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F4623B3A12F0078222E /* PostDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DEA02F4823B3A43D0078222E /* RemoteDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F7223B4B8730078222E /* EndPointFactory.swift */,
+				DEA02F7F23B5B1950078222E /* APIUtility */,
+				DEA02F6F23B4B7AF0078222E /* BaseAPIService */,
+				DEA02F0223B23FDB0078222E /* EmplateWebApi */,
+			);
+			path = RemoteDataStore;
+			sourceTree = "<group>";
+		};
+		DEA02F4B23B3AC2C0078222E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F4C23B3AC460078222E /* Coordinator.swift */,
+				DEA02F4E23B3AC710078222E /* PostsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DEA02F5023B3D0680078222E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F2623B36F590078222E /* PostListViewController.swift */,
+				DEA02F2723B36F590078222E /* PostListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEA02F5123B3D1880078222E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F5223B3D19B0078222E /* DateConverter.swift */,
+				DEA02F7D23B4EBA50078222E /* CurrencyConverter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DEA02F5923B413C00078222E /* EmplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE7B8B2A23B7D35B0051A1EE /* Utilities */,
+				DEA02F6B23B41DBD0078222E /* Mocks */,
+				DEA02F6823B41C680078222E /* ViewModel */,
+				DEA02F6223B413C90078222E /* Model */,
+				DEA02F5A23B413C00078222E /* EmplateTests.swift */,
+				DEA02F5C23B413C00078222E /* Info.plist */,
+			);
+			path = EmplateTests;
+			sourceTree = "<group>";
+		};
+		DEA02F6223B413C90078222E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F6323B414450078222E /* PostTest */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEA02F6323B414450078222E /* PostTest */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F6423B414670078222E /* PostTest.swift */,
+				DEA02F6623B414D90078222E /* PostTest+Json.swift */,
+			);
+			path = PostTest;
+			sourceTree = "<group>";
+		};
+		DEA02F6823B41C680078222E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F6923B41CAA0078222E /* PostListViewModelTests.swift */,
+				DE7B8B2823B7D2D00051A1EE /* PostCellViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEA02F6B23B41DBD0078222E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F6C23B41DD80078222E /* PostUseCaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DEA02F6F23B4B7AF0078222E /* BaseAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F7023B4B7F30078222E /* BaseApiService.swift */,
+				DEA02F7723B4B8DE0078222E /* BaseApiServiceError.swift */,
+			);
+			path = BaseAPIService;
+			sourceTree = "<group>";
+		};
+		DEA02F7F23B5B1950078222E /* APIUtility */ = {
+			isa = PBXGroup;
+			children = (
+				DEA02F8023B5B1C30078222E /* HTTPMethod+HTTPSchema.swift */,
+			);
+			path = APIUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +457,24 @@
 			productReference = DEA02EEA23B23CD00078222E /* Emplate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEA02F5723B413C00078222E /* EmplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA02F5F23B413C00078222E /* Build configuration list for PBXNativeTarget "EmplateTests" */;
+			buildPhases = (
+				DEA02F5423B413C00078222E /* Sources */,
+				DEA02F5523B413C00078222E /* Frameworks */,
+				DEA02F5623B413C00078222E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA02F5E23B413C00078222E /* PBXTargetDependency */,
+			);
+			name = EmplateTests;
+			productName = EmplateTests;
+			productReference = DEA02F5823B413C00078222E /* EmplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,6 +487,10 @@
 				TargetAttributes = {
 					DEA02EE923B23CD00078222E = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					DEA02F5723B413C00078222E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = DEA02EE923B23CD00078222E;
 					};
 				};
 			};
@@ -175,6 +508,7 @@
 			projectRoot = "";
 			targets = (
 				DEA02EE923B23CD00078222E /* Emplate */,
+				DEA02F5723B413C00078222E /* EmplateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,7 +520,15 @@
 			files = (
 				DEA02EFA23B23CD00078222E /* LaunchScreen.storyboard in Resources */,
 				DEA02EF723B23CD00078222E /* Assets.xcassets in Resources */,
-				DEA02EF523B23CD00078222E /* Main.storyboard in Resources */,
+				DEA02F2923B36F590078222E /* PostListViewController.xib in Resources */,
+				DEA02F2023B36EFA0078222E /* PostCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA02F5623B413C00078222E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,26 +581,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA02F0923B2444F0078222E /* EmplateApiClient.swift in Sources */,
+				DEA02F2823B36F590078222E /* PostListViewController.swift in Sources */,
+				DEA02F7E23B4EBA50078222E /* CurrencyConverter.swift in Sources */,
+				DEA02F3E23B3965A0078222E /* UIView+typeName.swift in Sources */,
+				DEA02F7823B4B8DE0078222E /* BaseApiServiceError.swift in Sources */,
+				DEA02F5323B3D19B0078222E /* DateConverter.swift in Sources */,
+				DEA02F4D23B3AC460078222E /* Coordinator.swift in Sources */,
+				DEA02F4F23B3AC710078222E /* PostsCoordinator.swift in Sources */,
+				DEA02F3C23B395BE0078222E /* PostsViewModel.swift in Sources */,
+				DEA02F7A23B4B9850078222E /* EmplateAPIService.swift in Sources */,
+				DEA02F8323B646D40078222E /* UIViewController+ActivityIndicator.swift in Sources */,
+				DEA02F1F23B36EFA0078222E /* PostCell.swift in Sources */,
 				DEA02F0723B242490078222E /* Dictionary+merge.swift in Sources */,
-				DEA02EF223B23CD00078222E /* ViewController.swift in Sources */,
-				DEA02F0423B240700078222E /* EmplateApiInfo.swift in Sources */,
+				DEA02F4723B3A12F0078222E /* PostDataRepository.swift in Sources */,
+				DEA02F7C23B4BA070078222E /* Error+Code.swift in Sources */,
+				DEA02F1023B24CD40078222E /* PostPeriod.swift in Sources */,
+				DEA02F3923B392EF0078222E /* PostCellViewModel.swift in Sources */,
+				DEA02F4223B39E5C0078222E /* PostsUseCase.swift in Sources */,
+				DEA02F1823B24DC10078222E /* Urls.swift in Sources */,
+				DEA02F8523B652560078222E /* UIViewController+Alert.swift in Sources */,
+				DEA02F0423B240700078222E /* EmplateAPIConstatnt.swift in Sources */,
+				DEA02F7323B4B8730078222E /* EndPointFactory.swift in Sources */,
+				DEA02F0E23B24C060078222E /* PostField.swift in Sources */,
 				DEA02EEE23B23CD00078222E /* AppDelegate.swift in Sources */,
-				DEA02EF023B23CD00078222E /* SceneDelegate.swift in Sources */,
+				DEA02F1223B24D300078222E /* Thumbnail.swift in Sources */,
+				DEA02F0C23B24A340078222E /* Post.swift in Sources */,
+				DEA02F7123B4B7F30078222E /* BaseApiService.swift in Sources */,
+				DEA02F8123B5B1C30078222E /* HTTPMethod+HTTPSchema.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA02F5423B413C00078222E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA02F6A23B41CAA0078222E /* PostListViewModelTests.swift in Sources */,
+				DEA02F6D23B41DD80078222E /* PostUseCaseMock.swift in Sources */,
+				DEA02F6723B414D90078222E /* PostTest+Json.swift in Sources */,
+				DEA02F5B23B413C00078222E /* EmplateTests.swift in Sources */,
+				DE7B8B2E23B7DF150051A1EE /* DateConverterTests.swift in Sources */,
+				DE7B8B2923B7D2D00051A1EE /* PostCellViewModelTests.swift in Sources */,
+				DEA02F6523B414670078222E /* PostTest.swift in Sources */,
+				DE7B8B2C23B7D3770051A1EE /* CurrencyConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		DEA02EF323B23CD00078222E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEA02EF423B23CD00078222E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		DEA02F5E23B413C00078222E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA02EE923B23CD00078222E /* Emplate */;
+			targetProxy = DEA02F5D23B413C00078222E /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		DEA02EF823B23CD00078222E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,7 +768,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Emplate/Info.plist;
+				INFOPLIST_FILE = Emplate/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +786,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Emplate/Info.plist;
+				INFOPLIST_FILE = Emplate/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +795,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEA02F6023B413C00078222E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madian.EmplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emplate.app/Emplate";
+			};
+			name = Debug;
+		};
+		DEA02F6123B413C00078222E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madian.EmplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emplate.app/Emplate";
 			};
 			name = Release;
 		};
@@ -437,6 +853,15 @@
 			buildConfigurations = (
 				DEA02EFF23B23CD00078222E /* Debug */,
 				DEA02F0023B23CD00078222E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA02F5F23B413C00078222E /* Build configuration list for PBXNativeTarget "EmplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA02F6023B413C00078222E /* Debug */,
+				DEA02F6123B413C00078222E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
